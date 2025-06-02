@@ -1,0 +1,369 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #f9faff;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+/* Navbar */
+.navbar {
+  background: #0a3d62;
+  color: white;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.school-info h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.school-info p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #ff793f;
+}
+
+/* Dropdown */
+.dropdown:hover > .dropdown-menu,
+.dropdown:focus-within > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: #0a3d62;
+  border-radius: 5px;
+  display: none;
+  min-width: 160px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  z-index: 1001;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  padding: 0.5rem 1rem;
+  display: block;
+  font-weight: normal;
+  color: white;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #ff793f;
+  color: white;
+}
+
+/* Mobile menu toggle */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: url('images/campus-hero.jpg') center center/cover no-repeat;
+  height: 100vh; /* Increased from 80vh for bigger hero image */
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(10, 61, 98, 0.75);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.cta-buttons a {
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  margin: 0 1rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #ff793f;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #e06e2f;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #ff793f;
+  color: #ff793f;
+}
+
+.btn-secondary:hover {
+  background-color: #ff793f;
+  color: white;
+}
+
+/* Section Styles */
+.section {
+  padding: 4rem 0;
+  background: white;
+  border-radius: 12px;
+  margin: 2rem 0;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+
+.section h2,
+.section h3 {
+  color: #0a3d62;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.section p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Image grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 220px; /* Increased from 140px for bigger gallery images */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Highlight Popup */
+.highlight-popup {
+  background-color: #fffbf0;
+  border-left: 6px solid #ff793f;
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #d35400;
+}
+
+/* Staff Messages */
+.staff-messages {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.staff-member {
+  background: #f7f9fc;
+  border-radius: 12px;
+  padding: 1rem;
+  flex: 1 1 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.staff-member img {
+  width: 160px;  /* Increased from 120px for bigger staff images */
+  height: 160px; /* Increased from 120px */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #ff793f;
+}
+
+.staff-member h4 {
+  margin-bottom: 0.25rem;
+  color: #0a3d62;
+}
+
+.staff-member p em {
+  color: #ff793f;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Lists */
+ul {
+  list-style: disc inside;
+  margin-top: 1rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin-top: 2rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #0a3d62;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ff793f;
+  box-shadow: 0 0 8px #ff793f55;
+}
+
+.contact-form button {
+  max-width: 150px;
+  align-self: flex-start;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: #0a3d62;
+  color: white;
+  padding: 1.5rem 1rem;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .staff-messages {
+    flex-direction: column;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #0a3d62;
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  nav ul.nav-open {
+    display: flex;
+  }
+  nav ul li {
+    padding: 0.75rem 1rem;
+  }
+  nav ul li a {
+    padding: 0;
+  }
+  .mobile-menu-toggle {
+    display: block;
+  }
+}
