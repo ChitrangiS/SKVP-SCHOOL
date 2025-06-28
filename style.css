@@ -1,369 +1,595 @@
-/* Reset */
+/********** Common CSS Starts **********/  
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+     margin:0px;
+     padding:0px;
+     -webkit-box-sizing:border-box;
+     -moz-box-sizing:border-box;
+     box-sizing:border-box;
+     margin:0;
+     padding:0;
+     outline:0 
+}
+ html {
+     -webkit-text-size-adjust:100%;
+     -ms-text-size-adjust:100%;
+     font-size:10px;
+     -webkit-tap-highlight-color:transparent 
+}
+ html, body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    color: #242424;
+    font-weight: 400;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  background: #f9faff;
-  color: #333;
+ .container {
+     width: 1100px;
+     margin:0px auto;
+     display:table;
 }
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
+ .width-100 {
+     width: 100%;
+     float: left;
 }
-
-/* Navbar */
-.navbar {
-  background: #0a3d62;
-  color: white;
-  padding: 0.5rem 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+ .width-25 {
+     width: 25%;
+     float: left;
 }
-
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+ .width-33 {
+     width: 33%;
+     float: left;
 }
+ .width-50 {
+     float: left;
+     width: 50%;
+}
+ .width-66 {
+     width: 66%;
+     float: left;
+}
+ .width-75 {
+     width:75%;
+     float: left;
+}
+ .mt-20 {
+     margin-top:20px;
+}
+ .mt-30 {
+     margin-top:30px;
+}
+ .mt-50 {
+     margin-top:50px;
+}
+ .main-section{
+     width: 100%;
+     float: left;
+     padding-top:70px;
+     padding-bottom:70px;
+}
+/********** Common CSS Ends **********/
 
+
+/********** Top Header CSS Starts **********/  
+.header {
+     background-color: #59a1bb;
+}
+ .head-left ul {
+     list-style:none;
+     float:left;
+}
+ .head-left ul li {
+     border-right: 1px solid rgba(255, 255, 255, .3);
+     border-left: 1px solid rgba(255, 255, 255, .3);
+     float: left;
+     padding: 15px;
+     color: white;
+}
+ .head-left ul li a {
+     color:white;
+     text-decoration:none;
+}
+ .notification {
+     padding-top: 17px;
+     color: white;
+}
+ .notification span img {
+     height: 14px;
+     width: 30px;
+}
+ .notification span {
+     padding-right: 5px;
+}
+ .head-right ul {
+     list-style:none;
+     float: right;
+}
+ .head-right ul li {
+     border-right: 1px solid rgba(255, 255, 255, .3);
+     border-left: 1px solid rgba(255, 255, 255, .3);
+     float: left;
+     padding: 15px;
+     color: white;
+}
+ .head-right ul li a {
+     color:white;
+     text-decoration:none;
+}
+ .head-span img {
+     height: 14px;
+     width: 30px;
+}
+/********** Top Header CSS Ends **********/
+
+/********** Logo And Main Menu CSS Starts **********/  
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+     padding-top:5px;
+     padding-bottom:5px;
 }
-
-.logo img {
-  width: 50px;
-  height: 50px;
-  border-radius: 6px;
+ .logo img {
+     height:50px;
 }
-
-.school-info h1 {
-  font-size: 1.3rem;
-  font-weight: 600;
+ .head-menu {
+     padding-top: 25px;
+     padding-bottom: 12px;
 }
-
-.school-info p {
-  font-size: 0.9rem;
-  opacity: 0.85;
+ .head-menu ul {
+     list-style: none;
+     float: right;
+     font-size: 14px;
 }
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
+ .head-menu ul li {
+     float: left;
+     padding-left:20px;
 }
-
-nav ul li {
-  position: relative;
+ .head-menu ul li a {
+     color: #4a4a4a;
+     text-decoration: none;
+     font-size: 17px;
+     font-weight: bold;
 }
+/********** Logo And Main Menu CSS Ends **********/
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0.5rem 0;
-  transition: color 0.3s ease;
+/********** Slider CSS Starts **********/  
+.main-banner {
+     width:100%;
 }
+/********** Slider CSS Ends **********/
 
-nav ul li a:hover,
-nav ul li a:focus {
-  color: #ff793f;
+/********** Notice Board, Recent Event CSS Starts **********/  
+.note-event {
+     padding: 10px;
+     border: 1px solid #e3e3e3;
+     width: 48%;
+     margin: 1%;
+     float: left;
 }
-
-/* Dropdown */
-.dropdown:hover > .dropdown-menu,
-.dropdown:focus-within > .dropdown-menu {
-  display: block;
+ .notice-board {
+     border: 5px solid #360057;
+     padding: 30px;
+     color: white;
+     background-color: #2A4D9B;
+     width: 100%;
+     float: left;
 }
-
-.dropdown-menu {
-  position: absolute;
-  top: 110%;
-  left: 0;
-  background: #0a3d62;
-  border-radius: 5px;
-  display: none;
-  min-width: 160px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-  z-index: 1001;
+ .notice-board ul {
+     list-style: none;
+     padding: 0px;
+     width: 100%;
+     float: left;
 }
-
-.dropdown-menu li {
-  margin: 0;
+ .notice-board ul li {
+     font-size: 14px;
+     margin-bottom: 20px;
+     width: 100%;
+     float: left;
 }
-
-.dropdown-menu li a {
-  padding: 0.5rem 1rem;
-  display: block;
-  font-weight: normal;
-  color: white;
+ .event-list {
+     padding: 10px;
+     width: 100%;
+     float: left;
+     border-bottom: 1px solid #e1e1e1;
 }
-
-.dropdown-menu li a:hover {
-  background-color: #ff793f;
-  color: white;
+ .event-date {
+     width: 80px;
+     float: left;
+     text-align: center;
+     background: #2A4D9B;
+     color: #fff;
+     padding: 10px 10px;
+     border-radius: 5px;
 }
-
-/* Mobile menu toggle */
-.mobile-menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
+ .event-date p {
+     font-weight: 400;
 }
-
-/* Hero Section */
-.hero {
-  background: url('images/campus-hero.jpg') center center/cover no-repeat;
-  height: 100vh; /* Increased from 80vh for bigger hero image */
-  display: flex;
-  align-items: center;
-  color: white;
-  text-align: center;
-  position: relative;
+ .event-date h4 {
+     font-weight: 400;
+     font-size:28px;
 }
-
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: rgba(10, 61, 98, 0.75);
-  z-index: 1;
+ .event-content {
+     width: calc(100% - 110px);
+     float: left;
+     margin-left: 10px;
+     margin-top: 15px;
 }
+/********** Notice Board, Recent Event CSS Ends **********/
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 2rem;
+/********** Campus Information CSS Starts **********/  
+.heading-text {
+     color: #064727;
+     font-size: 28px;
+     line-height: 20px;
 }
-
-.hero-content h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+ .heading-border {
+     background-color: #ffc600;
+     display: inline-block;
+     height: 3px;
+     margin-bottom: 0;
+     margin-top: 0;
+     position: relative;
+     width: 100px;
 }
-
-.hero-content p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+ .about-campus {
+     width: 100%;
+     float: left;
+     padding: 20px;
 }
-
-.cta-buttons a {
-  text-decoration: none;
-  padding: 0.75rem 2rem;
-  margin: 0 1rem;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
+ .about-campus p {
+     color: #65716b;
+     font-size: 16px;
+     margin-top: 15px;
+     line-height: 23px;
 }
-
-.btn-primary {
-  background-color: #ff793f;
-  color: white;
+ .about-campus ul {
+     list-style: none;
+     margin-top: 30px;
+     width: 100%;
+     float: left;
 }
-
-.btn-primary:hover {
-  background-color: #e06e2f;
+ .about-campus li {
+     color: #626262;
+     font-size: 15px;
+     margin-bottom:8px;
 }
-
-.btn-secondary {
-  background-color: transparent;
-  border: 2px solid #ff793f;
-  color: #ff793f;
+ .about-campus li i {
+     color: #68bb59;
 }
-
-.btn-secondary:hover {
-  background-color: #ff793f;
-  color: white;
+ .about-year {
+     margin-top:40px;
 }
-
-/* Section Styles */
-.section {
-  padding: 4rem 0;
-  background: white;
-  border-radius: 12px;
-  margin: 2rem 0;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+ .about-year h3 {
+     font-size: 45px;
+     color: #68bb59;
+     line-height: 0;
 }
-
-.section h2,
-.section h3 {
-  color: #0a3d62;
-  margin-bottom: 1rem;
-  font-weight: 700;
+ .about-year span {
+     font-size: 40px;
+     color: #68bb59;
+     position: relative;
+     bottom: 5px;
 }
-
-.section p {
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
-  color: #555;
+ .about-year h5 {
+     font-size: 14px;
+     font-weight: 400;
+     margin-top:20px;
 }
-
-/* Image grid */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+ .about-campus a {
+     padding: 15px;
+     border: none;
+     background-color: #68bb59;
+     color: white;
+     border-radius: 2px;
+     font-size: 14px;
+     margin-top:25px;
+     float:left;
+     text-decoration:none;
 }
+/********** Campus Information CSS Ends **********/
 
-.image-grid img {
-  width: 100%;
-  height: 220px; /* Increased from 140px for bigger gallery images */
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-  cursor: pointer;
+/********** Achievement CSS Starts **********/  
+.achievement, .achievement-banner {
+     padding: 10px;
 }
-
-.image-grid img:hover {
-  transform: scale(1.05);
-}
-
-/* Highlight Popup */
-.highlight-popup {
-  background-color: #fffbf0;
-  border-left: 6px solid #ff793f;
-  padding: 1rem 1.5rem;
-  margin: 2rem 0;
-  border-radius: 8px;
-  font-weight: 600;
-  color: #d35400;
-}
-
-/* Staff Messages */
-.staff-messages {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-}
-
-.staff-member {
-  background: #f7f9fc;
-  border-radius: 12px;
-  padding: 1rem;
-  flex: 1 1 300px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  text-align: center;
-}
-
-.staff-member img {
-  width: 160px;  /* Increased from 120px for bigger staff images */
-  height: 160px; /* Increased from 120px */
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  border: 3px solid #ff793f;
-}
-
-.staff-member h4 {
-  margin-bottom: 0.25rem;
-  color: #0a3d62;
-}
-
-.staff-member p em {
-  color: #ff793f;
-  font-style: normal;
-  font-weight: 600;
-}
-
-/* Lists */
-ul {
-  list-style: disc inside;
-  margin-top: 1rem;
-}
-
-ul li {
-  margin-bottom: 0.5rem;
-}
-
-/* Contact Form */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 500px;
-  margin-top: 2rem;
-}
-
-.contact-form label {
-  font-weight: 600;
-  color: #0a3d62;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 0.75rem;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-  resize: vertical;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: #ff793f;
-  box-shadow: 0 0 8px #ff793f55;
-}
-
-.contact-form button {
-  max-width: 150px;
-  align-self: flex-start;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  background: #0a3d62;
-  color: white;
-  padding: 1.5rem 1rem;
-  font-weight: 600;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .staff-messages {
-    flex-direction: column;
-  }
-  nav ul {
-    display: none;
-    flex-direction: column;
-    background: #0a3d62;
-    position: absolute;
-    top: 60px;
-    right: 1rem;
-    border-radius: 8px;
-    width: 200px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  }
-  nav ul.nav-open {
-    display: flex;
-  }
-  nav ul li {
-    padding: 0.75rem 1rem;
-  }
-  nav ul li a {
-    padding: 0;
-  }
-  .mobile-menu-toggle {
+.achievement-banner img {
+    width: 100%;
+    max-width: 250px;
+    height: 150px;
+    object-fit: cover;
     display: block;
-  }
+    margin: 0 auto;
 }
+
+ .achievement h3 {
+     margin-top: 15px;
+     font-size: 16px;
+     font-weight: 600;
+     letter-spacing: 0.1px;
+}
+ .achievement p {
+     margin-top: 10px;
+     font-size: 15px;
+     line-height: 22px;
+     letter-spacing: 0.1px;
+}
+ .achievement a {
+     padding: 10px 14px;
+     background-color: #59a1bb;
+     color: white;
+     border-radius: 2px;
+     font-size: 14px;
+     margin-top: 15px;
+     text-decoration: none;
+     float: left;
+}
+ .achievement-banner h5 {
+     font-size: 16px;
+     padding:0px;
+     margin:0px;
+     margin-top: 10px;
+     line-height: 20px;
+}
+ .achievement-banner p {
+     font-size: 16px;
+     margin-top: 2px;
+}
+/********** Achievement CSS Ends **********/
+
+/********** Popular Courses CSS Starts **********/  
+.bg-lightgrey {
+     background-color:#f7f7f7;
+}
+ .course-list {
+     text-align: center;
+     margin-bottom: 20px;
+     padding: 20px 0px;
+     width: 90%;
+     float: left;
+}
+ .course-list i {
+     font-size:20px;
+}
+ .popular-course h2 {
+     color: #064727;
+     font-size: 28px;
+}
+ .popular-course p {
+     font-size: 14px;
+     margin-top: 10px;
+     line-height: 25px;
+     font-weight: 400;
+}
+ .popular-course a {
+     text-decoration: none;
+     color: #064727;
+     float: left;
+     margin-top: 20px;
+}
+ .bg-yellow {
+     background:#ffc252 
+}
+ .bg-blue {
+     background: #add8e6;
+}
+ .bg-green {
+     background: #90ee90;
+}
+ .bg-grey {
+     background: #d3d3d3;
+}
+/********** Popular Courses CSS Ends **********/
+
+
+/********** Testimonial CSS Starts **********/  
+.testimonial {
+     width:100%;
+     float:left;
+     padding-right:20px;
+}
+ .testimonial-content {
+     background: #76c568;
+     color: #fff;
+     width: 100%;
+     float: left;
+     padding: 20px;
+     font-size: 16px;
+     line-height: 35px;
+     position: relative;
+}
+ .testimonial-content::after {
+     content: "";
+     position: absolute;
+     top: 100%;
+     left: 20px;
+     margin-left: 6px;
+     border-width: 34px;
+     border-style: solid;
+     border-color: #76c568 transparent transparent;
+     width: 0%;
+}
+ .testimonial-detail {
+     width:100%;
+     float:left;
+     margin-top: 40px;
+}
+ .testimonial-img {
+     width:90px;
+     float:left;
+     text-align:center 
+}
+ .testimonial-img img {
+     width:70px;
+     height:70px;
+     border-radius:50%;
+}
+ .testimonial-name {
+     margin-left:10px;
+     float:left;
+     width: calc(100% - 100px);
+     font-size:16px;
+}
+ .testimonial-name h5 {
+     font-size:18px;
+     margin-top:10px;
+}
+ .testimonial-name p {
+     font-size:16px;
+}
+/********** Testimonial CSS Ends **********/
+
+
+
+
+/********** Gallery CSS Starts **********/  
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* spacing between images */
+    margin-top: 30px;
+}
+
+.gallery .width-25 {
+    width: 24%; /* 4 images per row */
+    box-sizing: border-box;
+}
+
+.gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px; /* optional: smooth corners */
+}
+
+/********** Gallery CSS Ends **********/
+
+/********** Teachers Section CSS Starts **********/  
+.our-teacher {
+     padding:20px;
+     width:100%;
+     float:left;
+}
+ .our-teacher p {
+     font-size:15px;
+     line-height: 25px;
+     margin-top:10px;
+}
+ .our-teacher a {
+     background: #68bb59;
+     color: #fff;
+     padding: 14px 20px;
+     float: left;
+     text-decoration: none;
+     font-size: 16px;
+     margin-top:20px;
+}
+ .meet-tech {
+     position: relative;
+}
+ .meet-tech img {
+     border-radius: 8px;
+     width: 100%;
+     height: auto;
+     padding:5px;
+}
+ .meet-tech-div {
+     position: absolute;
+     bottom: 20px;
+     left: 65px;
+     border-radius: 5px;
+     text-align: center;
+     background-color: white;
+     padding:10px;
+}
+/********** Teachers Section CSS Ends **********/
+
+/********** Footer CSS Starts **********/  
+.footer-section {
+     background-color:#1f2836;
+     padding-top: 70px;
+     padding-bottom:70px;
+     width:100%;
+     float:left;
+}
+ .footer-link h2 {
+     color:#fff;
+     text-align:left;
+     margin-bottom: 20px;
+}
+ .footer-link p {
+     color: #fff;
+     line-height: 20px;
+     padding: 0px 30px 0px 0px;
+}
+ .social-icon {
+     list-style: none;
+     margin-top:20px;
+}
+ .social-icon li {
+     float: left;
+     padding-left: 10px;
+}
+ .social-icon li a i {
+     color: #fff;
+     font-size: 18px;
+     padding: 5px 10px;
+}
+ .social-icon .fa-twitter {
+     background: #2ed1ff;
+}
+ .social-icon .fa-whatsapp {
+     background: #4CAF50;
+}
+ .social-icon .fa-facebook {
+     background: #3b5998;
+}
+ .social-icon .fa-linkedin {
+     background: #3b5998;
+}
+ .footer-menu {
+     padding: 0px;
+     width: 100%;
+     float: left;
+     list-style: none;
+}
+ .footer-menu li {
+     width: 50%;
+     float: left;
+     list-style: none;
+     margin-bottom: 10px;
+}
+ .footer-menu li a {
+     color:#fff;
+     text-decoration: none;
+}
+ .footer-contact {
+     list-style: none;
+     padding: 0px;
+     width: 100%;
+     float: left;
+     color: #fff;
+}
+ .footer-contact li {
+     width: 100%;
+     float: left;
+     margin-bottom: 10px;
+}
+ .footer-contact span {
+     padding-left:5px;
+}
+ .newsletter p {
+     margin-bottom:10px;
+}
+ .newsletter input {
+     width: 100%;
+     float: left;
+     padding:10px;
+}
+ .newsletter button {
+     width: 100%;
+     float: left;
+     padding: 10px;
+     border: none;
+     border-radius: 4px;
+     background-color: gold;
+     margin-top:10px;
+}
+/********** Footer CSS Ends **********/
